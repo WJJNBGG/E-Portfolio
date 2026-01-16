@@ -1,9 +1,9 @@
 project:
   type: website
-  output-dir: C:/Users/melser/Documents/GitHub/E-Portfolio
+  output-dir: C:/Users/wujiaju.stu/Documents/GitHub/E-Portfolio
 
 website:
-  title: "Your E-Portfolio"
+  title: "Jiaju's E-Portfolio"
   navbar:
     left:
       - href: index.qmd
@@ -14,7 +14,10 @@ website:
         text: Publications
       - href: content.qmd
         text: Content & Deliverables
-
+### adding new by
+      #- href: contact.qmd # create this within the same file
+      # text: contact information
+      
 format:
   html:
     theme: flatly

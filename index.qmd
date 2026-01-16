@@ -1,5 +1,5 @@
 ---
-title: "My E-Portfolio"
+title: "Jiaju's E-Portfolio"
 image: images/MGEM_logo.png
 about:
   template: trestles
@@ -16,7 +16,7 @@ about:
       href: https://github.com/ramonmelser
     - icon: envelope-at
       text: Email
-      href: mailto:melser@student.ubc.ca
+      href: mailto:wujiaju@student.ubc.ca
 ---
 
 Hey there people,
