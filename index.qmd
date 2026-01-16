@@ -18,6 +18,7 @@ about:
       text: Email
       href: mailto:wujiaju@student.ubc.ca
 ---
+##About me
 
 Currently studying at UBC as a master student, I have the privilege to live and learn as an uninvited guest on the traditional, ancestral and unceded territories of the Musqueam people. 
 I worked with a First Nation forestry venture, and I deeply appreciate this opportunity to build a real connection with "the people of the land" - the Lil'wat First Nation. 
