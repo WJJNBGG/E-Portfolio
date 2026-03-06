@@ -2,7 +2,7 @@
 title: "Jiaju's E-Portfolio"
 image: images/Jiaju_photo.jpg
 about:
-  template: trestles
+  template: solana
   image-width: 20em
   links: 
     - icon: linkedin
