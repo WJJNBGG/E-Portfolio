@@ -10,14 +10,19 @@ website:
         text: Home
       - href: resume.qmd
         text: Resume
-      - href: publications.qmd
-        text: Publications
+      - href: capstone.qmd
+        text: Capstone Project
       - href: content.qmd
-        text: Content & Deliverables
+        text: Skills & Deliverables
 ### adding new by
       #- href: contact.qmd # create this within the same file
       # text: contact information
-      
+  page-footer:
+    left: "© Jiaju — MGEM e-portfolio"
+    right:
+      - icon: envelope-at
+        href: mailto:wujiaju@student.ubc.ca
+        aria-label: Email
 format:
   html:
     theme: lux

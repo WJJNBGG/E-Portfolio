@@ -54,5 +54,19 @@
     "title": "Content & Deliverables",
     "section": "",
     "text": "You can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:\n\n\n&lt;iframe width=\"900\" height=\"700\"\nsrc=\"https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool\"&gt;\n&lt;/iframe&gt;\n\nThe full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
+  },
+  {
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "Jiaju’s E-Portfolio",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\nThis site highlights a small set of artifacts that best demonstrate how I work with data, maps, models, and professional communication. Each artifact includes a brief reflection (what I did, why it mattered, and what I would improve next)."
+  },
+  {
+    "objectID": "index.html#featured-highlights",
+    "href": "index.html#featured-highlights",
+    "title": "Jiaju’s E-Portfolio",
+    "section": "Featured highlights",
+    "text": "Featured highlights\n\nCapstone Project: Garry oak detection — methods, model comparison, and outputs.\nSkills & Deliverables: a course-by-course toolbox of geospatial and programming skills, with selected examples."
   }
 ]

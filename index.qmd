@@ -1,19 +1,12 @@
 ---
 title: "Jiaju's E-Portfolio"
+subtitle: "Remote sensing • Forestry • Geospatial analytics"
+description: "Selected work from the MGEM program, including Garry oak detection in Victoria’s urban forest."
 image: images/Jiaju_photo.jpg
 about:
   template: solana
   image-width: 20em
   links: 
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/ramon-melser-666932129/
-    - icon: twitter
-      text: Twitter/X
-      href: https://x.com/MelserRamon
-    - icon: github
-      text: GitHub
-      href: https://github.com/ramonmelser
     - icon: envelope-at
       text: Email
       href: mailto:wujiaju@student.ubc.ca
@@ -23,3 +16,20 @@ about:
 Currently studying at UBC as a master student, I have the privilege to live and learn as an uninvited guest on the traditional, ancestral and unceded territories of the Musqueam people. 
 I worked with a First Nation forestry venture, and I deeply appreciate this opportunity to build a real connection with "the people of the land" - the Lil'wat First Nation. 
 I am working on MGEM capstone project on species detection of Garry oak trees in Victoria's urban forest using remote sensing.
+
+
+
+
+## What you’ll find here
+
+This e-portfolio showcases a small set of artifacts demonstrating how I work with data, maps, models, and diverse knowledge systems.  
+
+
+## Featured highlights
+
+- **Capstone Project**: Garry oak detection — methods, model comparison, and outputs.
+- **Skills & Deliverables**: a course-by-course toolbox of geospatial and programming skills.
+
+<!-- PHOTO PLACEHOLDER: add one banner image that represents your work:
+     e.g., a field photo, a canopy map, or a LiDAR point cloud screenshot.
+     Example filename: images/banner_remote_sensing.jpg -->
