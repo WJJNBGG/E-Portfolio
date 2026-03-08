@@ -22,7 +22,7 @@ Through the MGEM program, I developed skills in:\
 - basic coding and data visualization\
 \
 
-## FCOR 599 Capstone Project
+## FCOR 599 - Capstone Project
 
 \
 \*\*Focus:\*\* Garry oak detection using LiDAR and orthophotos \

@@ -1,7 +1,6 @@
 ---
 title: "Jiaju's E-Portfolio"
 subtitle: "Remote sensing • Forestry • Geospatial analytics"
-description: "Selected work from the MGEM program, including Garry oak detection in Victoria’s urban forest."
 image: images/Jiaju_photo.jpg
 about:
   template: solana
