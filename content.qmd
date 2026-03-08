@@ -9,8 +9,9 @@ editor: visual
 
 \
 Selected skills, tools, and deliverable from my MGEM studies. \
-\
-\## Overview\
+
+## Overview
+
 \
 Through the MGEM program, I developed skills in:\
 \
@@ -20,7 +21,6 @@ Through the MGEM program, I developed skills in:\
 - spatial analysis in R\
 - basic coding and data visualization\
 \
----\
 
 ## FCOR 599 Capstone Project
 

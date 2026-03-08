@@ -32,7 +32,7 @@
     "href": "content.html",
     "title": "Skills & Deliverables",
     "section": "",
-    "text": "Selected skills, tools, and deliverable from my MGEM studies.\n\n## Overview\n\nThrough the MGEM program, I developed skills in:\n\n- remote sensing and raster processing\n- GIS mapping and cartography\n- LiDAR and aerial image analysis\n- spatial analysis in R\n- basic coding and data visualization\n\n—"
+    "text": "Selected skills, tools, and deliverable from my MGEM studies."
   },
   {
     "objectID": "content.html#leaflet",
@@ -208,5 +208,19 @@
     "title": "Skills & Deliverables",
     "section": "FCOR 599 Capstone Project",
     "text": "FCOR 599 Capstone Project\n\n**Focus:** Garry oak detection using LiDAR and orthophotos\n**Main tools:** `terra`, `lidR`, `sf`, `dplyr`, `ggplot2`, `randomForest`\n\n### Skills\n- crown-level feature extraction\n- classification workflow design\n- model comparison\n- map production\n- interpreting accuracy results\n\n### Example R code: simple crown classification\n\n\nlibrary(dplyr)\n\nWarning: package 'dplyr' was built under R version 4.5.1\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ncrowns &lt;- data.frame(  \n  crown_id = 1:8,  \n  height_m = c(12, 18, 9, 16, 7, 20, 11, 15),  \n  ndvi = c(0.72, 0.81, 0.55, 0.78, 0.49, 0.84, 0.61, 0.76))\n\ncrowns &lt;- crowns %&gt;%  \n  mutate(prediction = ifelse(height_m &gt; 10 & ndvi &gt; 0.70, \"Garry oak\", \"Other\"))\n\ncrowns\n\n  crown_id height_m ndvi prediction\n1        1       12 0.72  Garry oak\n2        2       18 0.81  Garry oak\n3        3        9 0.55      Other\n4        4       16 0.78  Garry oak\n5        5        7 0.49      Other\n6        6       20 0.84  Garry oak\n7        7       11 0.61      Other\n8        8       15 0.76  Garry oak"
+  },
+  {
+    "objectID": "content.html#overview",
+    "href": "content.html#overview",
+    "title": "Skills & Deliverables",
+    "section": "Overview",
+    "text": "Overview\n\nThrough the MGEM program, I developed skills in:\n\n- remote sensing and raster processing\n- GIS mapping and cartography\n- LiDAR and aerial image analysis\n- spatial analysis in R\n- basic coding and data visualization"
+  },
+  {
+    "objectID": "content.html#gem-511-cartography-and-visualization",
+    "href": "content.html#gem-511-cartography-and-visualization",
+    "title": "Skills & Deliverables",
+    "section": "GEM 511 – Cartography and Visualization",
+    "text": "GEM 511 – Cartography and Visualization\nFocus: map design, layout, communication, visual clarity\nMain tools: ggplot2, sf\n\nSkills\n\nmap readability\nsymbol choices\nclear visual communication\nmaking figures more professional\n\n\n\nExample R code: simple thematic map style\n\nlibrary(ggplot2)\n\nareas &lt;- data.frame(\n  neighborhood = c(\"North\", \"South\", \"East\", \"West\"),\n  park_cover = c(12, 28, 19, 35)\n)\n\nggplot(areas, aes(x = neighborhood, y = park_cover)) +\n  geom_col() +\n  labs(title = \"Example Thematic Figure\",\n       x = \"Area\",\n       y = \"Park Cover (%)\")"
   }
 ]
