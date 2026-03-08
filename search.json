@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Jiaju’s E-Portfolio",
     "section": "",
-    "text": "##About me\nCurrently studying at UBC as a master student, I have the privilege to live and learn as an uninvited guest on the traditional, ancestral and unceded territories of the Musqueam people. I worked with a First Nation forestry venture, and I deeply appreciate this opportunity to build a real connection with “the people of the land” - the Lil’wat First Nation. I am working on MGEM capstone project on species detection of Garry oak trees in Victoria’s urban forest using remote sensing."
+    "text": "Currently studying at UBC as a master student, I have the privilege to live and learn as an uninvited guest on the traditional, ancestral and unceded territories of the Musqueam people. I worked with a First Nation forestry venture, and I deeply appreciate this opportunity to build a real connection with “the people of the land” - the Lil’wat First Nation. I am working on MGEM capstone project on species detection of Garry oak trees in Victoria’s urban forest using remote sensing."
   },
   {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "Education\n\nList your education here.\n\n\n\nPublications\nPeer-reviewed publications:\n\nList any peer-reviewed publications here.\n\nReports:\n\nList any non-peer reviewed materials you’d like to share here.\n\n\n\nConferences & Talks\nInvited Talks\n\nIf you’ve been invited to speak in a professional setting, list that here.\n\nConference Presentations\n\nIf the presentation was at a conference, list them here.\n\n\n\nAwards & Honors\n\nList any scholarships, bursaries, etc.\n\n\n\nTeaching Assistantships\n\nList any TA positions you may have held.\n\n\n\nInstitutional Service\n\nVolunteering etc."
+    "text": "I leverage the power of remote sensing, geospatial analysis, and forestry in my work. My strengths include turning spatial data into maps and reports for decision-making and further analysis."
   },
   {
     "objectID": "publications.html",
@@ -30,9 +30,9 @@
   {
     "objectID": "content.html",
     "href": "content.html",
-    "title": "Content & Deliverables",
+    "title": "Skills & Deliverables",
     "section": "",
-    "text": "This is a sample page where you can archive project deliverables. Every header you use will correspond to a tab in the legend - shown on the right-hand side of your screen (“On this page”).\nIf you’ve produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.\n\n\nSample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page here.\n\n\n\n\n\n\n\n\n\nSample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nRPython\n\n\ncalc_ndvi &lt;- function(nir, red){\n  ndvi &lt;- (nir-red)/(nir+red)\n  return(ndvi)\n}\n(Assuming nir and red are terra rast objects)\n\n\ndef calc_ndvi(nir, red): \n  ndvi = (nir - red)/(nir + red)\n  return(ndvi)\n(Assuming nir and red are numpy arrays)\n\n\n\n\n\n\nYou can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:\n\n\n&lt;iframe width=\"900\" height=\"700\"\nsrc=\"https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool\"&gt;\n&lt;/iframe&gt;\n\nThe full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
+    "text": "Selected skills, tools, and deliverable from my MGEM studies.\n\n## Overview\n\nThrough the MGEM program, I developed skills in:\n\n- remote sensing and raster processing\n- GIS mapping and cartography\n- LiDAR and aerial image analysis\n- spatial analysis in R\n- basic coding and data visualization\n\n—"
   },
   {
     "objectID": "content.html#leaflet",
@@ -60,13 +60,153 @@
     "href": "index.html#what-youll-find-here",
     "title": "Jiaju’s E-Portfolio",
     "section": "What you’ll find here",
-    "text": "What you’ll find here\nThis site highlights a small set of artifacts that best demonstrate how I work with data, maps, models, and professional communication. Each artifact includes a brief reflection (what I did, why it mattered, and what I would improve next)."
+    "text": "What you’ll find here\nThis e-portfolio showcases a small set of artifacts demonstrating how I work with data, maps, models, and diverse knowledge systems."
   },
   {
     "objectID": "index.html#featured-highlights",
     "href": "index.html#featured-highlights",
     "title": "Jiaju’s E-Portfolio",
     "section": "Featured highlights",
-    "text": "Featured highlights\n\nCapstone Project: Garry oak detection — methods, model comparison, and outputs.\nSkills & Deliverables: a course-by-course toolbox of geospatial and programming skills, with selected examples."
+    "text": "Featured highlights\n\nCapstone Project: Garry oak detection — methods, model comparison, and outputs.\nSkills & Deliverables: a course-by-course toolbox of geospatial and programming skills."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Jiaju’s E-Portfolio",
+    "section": "",
+    "text": "Currently studying at UBC as a master student, I have the privilege to live and learn as an uninvited guest on the traditional, ancestral and unceded territories of the Musqueam people. I worked with a First Nation forestry venture, and I deeply appreciate this opportunity to build a real connection with “the people of the land” - the Lil’wat First Nation. I am working on MGEM capstone project on species detection of Garry oak trees in Victoria’s urban forest using remote sensing."
+  },
+  {
+    "objectID": "index.html#garry-oak-detection-map-representation",
+    "href": "index.html#garry-oak-detection-map-representation",
+    "title": "Jiaju’s E-Portfolio",
+    "section": "Garry oak detection map representation",
+    "text": "Garry oak detection map representation\n\nDescription: Expected Garry Oak crown classification maps: (a) Fusion model (LiDAR + 4 band orthophoto), (b) LiDAR-only. Deep green polygons show predicted Garry Oak, light green polygons show predicted non-Garry Oak, and red points are the 2024 Garry Oak inventory."
+  },
+  {
+    "objectID": "resume.html#snapshot",
+    "href": "resume.html#snapshot",
+    "title": "Resume",
+    "section": "",
+    "text": "I leverage the power of remote sensing, geospatial analysis, and forestry in my work. My strengths include turning spatial data into maps and reports for decision-making and further analysis."
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Resume",
+    "section": "Experience",
+    "text": "Experience\nCo-op / Internship: Summer Student, &lt;Líl’wat Forestry&gt; — &lt;Líl’wat Nation, Mount Currie, BC&gt; | &lt;May-Aug,2024&gt;"
+  },
+  {
+    "objectID": "resume.html#technical-toolbox",
+    "href": "resume.html#technical-toolbox",
+    "title": "Resume",
+    "section": "Technical toolbox",
+    "text": "Technical toolbox\n\nGIS & mapping: ArcGIS Pro / QGIS\nRemote sensing: Raster workflows, LiDAR/ALS, image features\n\nProgramming: R , Python"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\nMaster of Geomatics for Environmental Management (MGEM) — “The University of British Columbia” | &lt;Apirl,2026&gt;\nBachelor of Science in Forestry (B.S.F. ) — “The University of British Columbia” | &lt;Apirl,2025&gt;"
+  },
+  {
+    "objectID": "capstone.html",
+    "href": "capstone.html",
+    "title": "Capstone Project",
+    "section": "",
+    "text": "This project mapped Garry oak trees in Victoria using remote sensing data.\nI used LiDAR, orthophotos, and Random Forest models to detect Garry oak crowns."
+  },
+  {
+    "objectID": "capstone.html#project-summary",
+    "href": "capstone.html#project-summary",
+    "title": "Capstone Project",
+    "section": "",
+    "text": "This project mapped Garry oak trees in Victoria using remote sensing data.\nI used LiDAR, orthophotos, and Random Forest models to detect Garry oak crowns."
+  },
+  {
+    "objectID": "capstone.html#why-it-matters",
+    "href": "capstone.html#why-it-matters",
+    "title": "Capstone Project",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nGarry oak is an important native species.\nThis project shows how remote sensing can help map it more efficiently."
+  },
+  {
+    "objectID": "capstone.html#data-and-methods",
+    "href": "capstone.html#data-and-methods",
+    "title": "Capstone Project",
+    "section": "Data and Methods",
+    "text": "Data and Methods\nI used LiDAR data, 4-band orthophotos, and ground truth reference data.\nI built two models: 1. - LiDAR-only 2. - Fusion (LiDAR + orthophoto)"
+  },
+  {
+    "objectID": "capstone.html#workflow-designs",
+    "href": "capstone.html#workflow-designs",
+    "title": "Capstone Project",
+    "section": "Workflow designs",
+    "text": "Workflow designs\nData processing → feature extraction → modelling → validation → mapping"
+  },
+  {
+    "objectID": "capstone.html#model-performance",
+    "href": "capstone.html#model-performance",
+    "title": "Capstone Project",
+    "section": "Model Performance",
+    "text": "Model Performance\nThe LiDAR-only model worked reasonably well.\nThe fusion model performed better overall."
+  },
+  {
+    "objectID": "capstone.html#key-result",
+    "href": "capstone.html#key-result",
+    "title": "Capstone Project",
+    "section": "Key Result",
+    "text": "Key Result\nAdding orthophoto information improved Garry oak detection.\nThe fusion model gave more accurate results than the LiDAR-only model."
+  },
+  {
+    "objectID": "capstone.html#garry-oak-detection-map-representation",
+    "href": "capstone.html#garry-oak-detection-map-representation",
+    "title": "Capstone Project",
+    "section": "Garry oak detection map representation",
+    "text": "Garry oak detection map representation\n\nDescription: Expected Garry Oak crown classification maps: (a) Fusion model (LiDAR + 4 band orthophoto), (b) LiDAR-only. Deep green polygons show predicted Garry Oak, light green polygons show predicted non-Garry Oak, and red points are the 2024 Garry Oak inventory."
+  },
+  {
+    "objectID": "content.html#gem-520-remote-sensing-i",
+    "href": "content.html#gem-520-remote-sensing-i",
+    "title": "Skills & Deliverables",
+    "section": "GEM 520 – Remote Sensing I",
+    "text": "GEM 520 – Remote Sensing I\nFocus: raster processing, satellite imagery, vegetation indices\nMain tools: terra, ggplot2\n\nSkills\n\nraster handling\nband math\nNDVI calculation\nsimple classification\nplotting raster outputs\n\n\n\nExample R code: NDVI with simple raster layers\n\nlibrary(terra)\n\nWarning: package 'terra' was built under R version 4.5.1\n\n\nterra 1.8.74\n\nred &lt;- rast(nrows = 4, ncols = 4, vals = c(\n  0.2, 0.3, 0.4, 0.2,\n  0.1, 0.2, 0.3, 0.2,\n  0.2, 0.4, 0.5, 0.3,\n  0.1, 0.2, 0.2, 0.1\n))\n\nnir &lt;- rast(nrows = 4, ncols = 4, vals = c(\n  0.6, 0.7, 0.8, 0.6,\n  0.5, 0.6, 0.7, 0.5,\n  0.6, 0.8, 0.9, 0.7,\n  0.4, 0.5, 0.6, 0.4\n))\n\nndvi &lt;- (nir - red) / (nir + red)\nplot(ndvi, main = \"Example NDVI\")"
+  },
+  {
+    "objectID": "content.html#gem-521-remote-sensing-ii",
+    "href": "content.html#gem-521-remote-sensing-ii",
+    "title": "Skills & Deliverables",
+    "section": "GEM 521 – Remote Sensing II",
+    "text": "GEM 521 – Remote Sensing II\nFocus: ALS, hyperspectral thinking, feature extraction, classification\nMain tools: terra, ggplot2, dplyr\n\nSkills\n\nworking with spectral and structural variables\ncomparing classes\nextracting meaningful features\nclassification thinking\n\n\n\nExample R code: comparing spectral signatures\n\nlibrary(ggplot2)\n\nWarning: package 'ggplot2' was built under R version 4.5.1\n\nspectra &lt;- data.frame(\n  wavelength = c(450, 550, 650, 850, 1600, 2200),\n  vegetation = c(0.08, 0.12, 0.05, 0.52, 0.30, 0.18),\n  soil = c(0.15, 0.20, 0.25, 0.30, 0.35, 0.32)\n)\n\nspectra_long &lt;- reshape(\n  spectra,\n  varying = c(\"vegetation\", \"soil\"),\n  v.names = \"reflectance\",\n  timevar = \"class\",\n  times = c(\"Vegetation\", \"Soil\"),\n  direction = \"long\"\n)\n\nggplot(spectra_long, aes(x = wavelength, y = reflectance, color = class)) +\n  geom_line(linewidth = 1) +\n  geom_point(size = 2) +\n  labs(title = \"Example Spectral Profiles\",\n       x = \"Wavelength (nm)\",\n       y = \"Reflectance\")"
+  },
+  {
+    "objectID": "content.html#toolbox",
+    "href": "content.html#toolbox",
+    "title": "Skills & Deliverables",
+    "section": "Toolbox",
+    "text": "Toolbox\nBelow are some of the main tools I used across the MGEM program:\n\nR / RStudio\nterra\nsf\nggplot2\ndplyr\nlidR\nArcGIS Pro\nQGIS\nPython (basic use)"
+  },
+  {
+    "objectID": "content.html#fcor-511-cartography-and-visualization",
+    "href": "content.html#fcor-511-cartography-and-visualization",
+    "title": "Skills & Deliverables",
+    "section": "FCOR 511 – Cartography and Visualization",
+    "text": "FCOR 511 – Cartography and Visualization\nFocus: map design, layout, communication, visual clarity\nMain tools: ggplot2, sf\n\nSkills\n\nmap readability\nsymbol choices\nclear visual communication\nmaking figures more professional\n\n\n\nExample R code: simple thematic map style\n\nlibrary(ggplot2)\n\nareas &lt;- data.frame(\n  neighborhood = c(\"North\", \"South\", \"East\", \"West\"),\n  park_cover = c(12, 28, 19, 35)\n)\n\nggplot(areas, aes(x = neighborhood, y = park_cover)) +\n  geom_col() +\n  labs(title = \"Example Thematic Figure\",\n       x = \"Area\",\n       y = \"Park Cover (%)\")"
+  },
+  {
+    "objectID": "content.html#fcor-511-diverse-knowledge-systems",
+    "href": "content.html#fcor-511-diverse-knowledge-systems",
+    "title": "Skills & Deliverables",
+    "section": "FCOR 511 – Diverse Knowledge Systems",
+    "text": "FCOR 511 – Diverse Knowledge Systems\nFocus: collaboration, sustainability, land-based perspectives\n\nSkills\n\nintegrating social and environmental ideas\nthinking beyond technical analysis\nconsidering multiple values in decision-making"
+  },
+  {
+    "objectID": "content.html#fcor-599-capstone-project",
+    "href": "content.html#fcor-599-capstone-project",
+    "title": "Skills & Deliverables",
+    "section": "FCOR 599 Capstone Project",
+    "text": "FCOR 599 Capstone Project\n\n**Focus:** Garry oak detection using LiDAR and orthophotos\n**Main tools:** `terra`, `lidR`, `sf`, `dplyr`, `ggplot2`, `randomForest`\n\n### Skills\n- crown-level feature extraction\n- classification workflow design\n- model comparison\n- map production\n- interpreting accuracy results\n\n### Example R code: simple crown classification\n\n\nlibrary(dplyr)\n\nWarning: package 'dplyr' was built under R version 4.5.1\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ncrowns &lt;- data.frame(  \n  crown_id = 1:8,  \n  height_m = c(12, 18, 9, 16, 7, 20, 11, 15),  \n  ndvi = c(0.72, 0.81, 0.55, 0.78, 0.49, 0.84, 0.61, 0.76))\n\ncrowns &lt;- crowns %&gt;%  \n  mutate(prediction = ifelse(height_m &gt; 10 & ndvi &gt; 0.70, \"Garry oak\", \"Other\"))\n\ncrowns\n\n  crown_id height_m ndvi prediction\n1        1       12 0.72  Garry oak\n2        2       18 0.81  Garry oak\n3        3        9 0.55      Other\n4        4       16 0.78  Garry oak\n5        5        7 0.49      Other\n6        6       20 0.84  Garry oak\n7        7       11 0.61      Other\n8        8       15 0.76  Garry oak"
   }
 ]

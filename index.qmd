@@ -11,7 +11,7 @@ about:
       text: Email
       href: mailto:wujiaju@student.ubc.ca
 ---
-##About me
+## About me
 
 Currently studying at UBC as a master student, I have the privilege to live and learn as an uninvited guest on the traditional, ancestral and unceded territories of the Musqueam people. 
 I worked with a First Nation forestry venture, and I deeply appreciate this opportunity to build a real connection with "the people of the land" - the Lil'wat First Nation. 
@@ -30,6 +30,4 @@ This e-portfolio showcases a small set of artifacts demonstrating how I work wit
 - **Capstone Project**: Garry oak detection — methods, model comparison, and outputs.
 - **Skills & Deliverables**: a course-by-course toolbox of geospatial and programming skills.
 
-<!-- PHOTO PLACEHOLDER: add one banner image that represents your work:
-     e.g., a field photo, a canopy map, or a LiDAR point cloud screenshot.
-     Example filename: images/banner_remote_sensing.jpg -->
+

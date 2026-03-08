@@ -1,75 +1,201 @@
 ---
-title: "Content & Deliverables"
-format: html
+title: "Skills & Deliverables"
+description: "A toolbox of methods and outputs developed across MGEM."
+format:
+  html:
+    toc: true
 editor: visual
 ---
 
-# Project 1 - Capstone Deliverables
+\
+Selected skills, tools, and deliverable from my MGEM studies. \
+\
+\## Overview\
+\
+Through the MGEM program, I developed skills in:\
+\
+- remote sensing and raster processing\
+- GIS mapping and cartography\
+- LiDAR and aerial image analysis\
+- spatial analysis in R\
+- basic coding and data visualization\
+\
+---\
 
-This is a sample page where you can archive project deliverables. Every header you use will correspond to a tab in the legend - shown on the right-hand side of your screen ("On this page").
+## FCOR 599 Capstone Project
 
-If you've produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.
+\
+\*\*Focus:\*\* Garry oak detection using LiDAR and orthophotos \
+\*\*Main tools:\*\* \`terra\`, \`lidR\`, \`sf\`, \`dplyr\`, \`ggplot2\`, \`randomForest\`\
+\
+\### Skills\
+- crown-level feature extraction\
+- classification workflow design\
+- model comparison\
+- map production\
+- interpreting accuracy results\
+\
+\### Example R code: simple crown classification\
 
-## Leaflet
+```{r}
+library(dplyr)
 
-Sample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page [here](https://ubc-mgem-fcor599.github.io/FCOR-599-Workshops/Interactive_Maps/leaflet.html).
+crowns <- data.frame(  
+  crown_id = 1:8,  
+  height_m = c(12, 18, 9, 16, 7, 20, 11, 15),  
+  ndvi = c(0.72, 0.81, 0.55, 0.78, 0.49, 0.84, 0.61, 0.76))
 
-```{r leaflet, include = FALSE}
-library(dplyr); library(leaflet)
+crowns <- crowns %>%  
+  mutate(prediction = ifelse(height_m > 10 & ndvi > 0.70, "Garry oak", "Other"))
 
-m <- leaflet() %>%
-  addProviderTiles("Esri.WorldImagery") %>%
-  addScaleBar(position = c("bottomleft")) %>%
-  setView(-123.1207, 49.2827, zoom = 11)
-
+crowns
 ```
 
-```{r map, echo=FALSE}
-m
+## GEM 520 – Remote Sensing I
+
+**Focus:** raster processing, satellite imagery, vegetation indices\
+**Main tools:** `terra`, `ggplot2`
+
+### Skills
+
+-   raster handling
+
+-   band math
+
+-   NDVI calculation
+
+-   simple classification
+
+-   plotting raster outputs
+
+### Example R code: NDVI with simple raster layers
+
+```{r}
+library(terra)
+
+red <- rast(nrows = 4, ncols = 4, vals = c(
+  0.2, 0.3, 0.4, 0.2,
+  0.1, 0.2, 0.3, 0.2,
+  0.2, 0.4, 0.5, 0.3,
+  0.1, 0.2, 0.2, 0.1
+))
+
+nir <- rast(nrows = 4, ncols = 4, vals = c(
+  0.6, 0.7, 0.8, 0.6,
+  0.5, 0.6, 0.7, 0.5,
+  0.6, 0.8, 0.9, 0.7,
+  0.4, 0.5, 0.6, 0.4
+))
+
+ndvi <- (nir - red) / (nir + red)
+plot(ndvi, main = "Example NDVI")
 ```
 
-## Code Snippets
+## GEM 521 – Remote Sensing II
 
-Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
+**Focus:** ALS, hyperspectral thinking, feature extraction, classification\
+**Main tools:** `terra`, `ggplot2`, `dplyr`
 
-::: {.panel-tabset group="language"}
-## R
+### Skills
 
-``` (.r)
-calc_ndvi <- function(nir, red){
-  ndvi <- (nir-red)/(nir+red)
-  return(ndvi)
-}
+-   working with spectral and structural variables
+
+-   comparing classes
+
+-   extracting meaningful features
+
+-   classification thinking
+
+### Example R code: comparing spectral signatures
+
+```{r}
+library(ggplot2)
+
+spectra <- data.frame(
+  wavelength = c(450, 550, 650, 850, 1600, 2200),
+  vegetation = c(0.08, 0.12, 0.05, 0.52, 0.30, 0.18),
+  soil = c(0.15, 0.20, 0.25, 0.30, 0.35, 0.32)
+)
+
+spectra_long <- reshape(
+  spectra,
+  varying = c("vegetation", "soil"),
+  v.names = "reflectance",
+  timevar = "class",
+  times = c("Vegetation", "Soil"),
+  direction = "long"
+)
+
+ggplot(spectra_long, aes(x = wavelength, y = reflectance, color = class)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2) +
+  labs(title = "Example Spectral Profiles",
+       x = "Wavelength (nm)",
+       y = "Reflectance")
 ```
 
-(Assuming *nir* and *red* are terra rast objects)
+## GEM 511 – Cartography and Visualization
 
-## Python
+**Focus:** map design, layout, communication, visual clarity\
+**Main tools:** `ggplot2`, `sf`
 
-``` (.python)
-def calc_ndvi(nir, red): 
-  ndvi = (nir - red)/(nir + red)
-  return(ndvi)
+### Skills
+
+-    map readability
+
+-   symbol choices
+
+-   clear visual communication
+
+-   making figures more professional
+
+### Example R code: simple thematic map style
+
+```{r}
+library(ggplot2)
+
+areas <- data.frame(
+  neighborhood = c("North", "South", "East", "West"),
+  park_cover = c(12, 28, 19, 35)
+)
+
+ggplot(areas, aes(x = neighborhood, y = park_cover)) +
+  geom_col() +
+  labs(title = "Example Thematic Figure",
+       x = "Area",
+       y = "Park Cover (%)")
 ```
 
-(Assuming *nir* and *red* are numpy arrays)
-:::
+## FCOR 511 – Diverse Knowledge Systems 
 
-## External links
+**Focus:** collaboration, sustainability, land-based perspectives
 
-You can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:
+### Skills
 
-```{code}
+-   integrating social and environmental ideas
 
-<iframe width="900" height="700"
-src="https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool">
-</iframe>
-```
+-   thinking beyond technical analysis
 
-The full-screen GEE application is available [here](https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool) in case you're interested.
+-   considering multiple values in decision-making
 
-(To use the GEE tool, navigate to any city you'd like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)
+## Toolbox
 
-```{=html}
-<iframe width="900" height="700" src="https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool"></iframe>
-```
+Below are some of the main tools I used across the MGEM program:
+
+-   R / RStudio
+
+-   terra
+
+-   sf
+
+-   ggplot2
+
+-   dplyr
+
+-   lidR
+
+-   ArcGIS Pro
+
+-   QGIS
+
+-   Python (basic use)
